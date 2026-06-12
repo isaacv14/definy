@@ -26,7 +26,8 @@ export async function checkRateLimit(ip: string): Promise<{ allowed: boolean; re
       .eq("ip_address", ip)
       .gte("created_at", windowStart)
       .order("created_at", { ascending: true })
-      .limit(1);
+      .limit(1)
+      .returns<{ created_at: string }[]>();
 
     const oldest = data?.[0]?.created_at;
     if (oldest) {
