@@ -42,7 +42,7 @@ export async function GET(
     _request.headers.get("x-real-ip") ??
     "127.0.0.1";
 
-  const { allowed, retryAfter } = checkRateLimit(ip);
+  const { allowed, retryAfter } = await checkRateLimit(ip);
   if (!allowed) {
     return Response.json(
       { error: "rate_limited", message: "Too many requests. Please try again later.", retryAfter },
@@ -61,9 +61,9 @@ export async function GET(
   try {
     rawResponse = await generateDefinition(normalizedSlug);
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Unknown AI error";
+    console.error("AI generation failed:", err);
     return Response.json(
-      { error: "ai_error", message },
+      { error: "ai_error", message: "Failed to generate definition. Please try again." },
       { status: 502 }
     );
   }
