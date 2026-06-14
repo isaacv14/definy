@@ -37,7 +37,7 @@ If you need to add a new shared utility:
 
 ---
 
-## Input Validation Flow (Agent 1 Reference)
+## Input Validation Flow
 
 When a user submits a search:
 
@@ -59,7 +59,7 @@ Database lookup by slug
 
 ---
 
-## Implementing the API Endpoint (Agent 1 Task)
+## Implementing the API Endpoint
 
 The `/api/word/[slug]` endpoint should follow this pseudocode:
 
@@ -132,7 +132,7 @@ export async function POST(request: Request) {
 
 ---
 
-## Building the Word Page (Agent 2 Task)
+## Building the Word Page
 
 The `/word/[slug]` page should:
 
