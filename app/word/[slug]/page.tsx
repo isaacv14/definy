@@ -9,7 +9,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const title = `${slug} - Meaning, Synonyms & Examples | AI Dictionary`;
+  const title = `${slug} - Meaning, Synonyms & Examples | Definy`;
   const description = `Learn the meaning of "${slug}" with simple definitions, example sentences, and synonyms. Perfect for English learners at A2-B1 level.`;
   return {
     title,

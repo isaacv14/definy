@@ -1,5 +1,5 @@
 /**
- * Shared TypeScript types for the AI Dictionary project.
+ * Shared TypeScript types for the Definy project.
  * These match the contract defined in agent-division.md
  */
 

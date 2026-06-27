@@ -1,4 +1,4 @@
-# Contributing to AI English Dictionary
+# Contributing to Definy
 
 This document helps developers understand the project structure and how to use the shared utilities.
 

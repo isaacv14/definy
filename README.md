@@ -1,4 +1,4 @@
-# AI-Powered English Dictionary
+# Definy
 
 **A web-based English dictionary for intermediate learners (A2-B1 level) that generates word definitions on-demand using Claude AI and caches them in Postgres.**
 
@@ -16,7 +16,7 @@
 1. **Clone and install dependencies:**
    ```bash
    git clone <repo-url>
-   cd ai-powered-english-dictionary
+   cd definy-dictionary
    pnpm install
    ```
 

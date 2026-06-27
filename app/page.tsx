@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center px-4">
       <main className="flex flex-col items-center text-center max-w-lg w-full">
         <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-3">
-          AI Dictionary
+          Definy
         </h1>
         <p className="text-base text-zinc-500 dark:text-zinc-400 mb-8">
           Look up any English word — get a clear definition, synonyms, and

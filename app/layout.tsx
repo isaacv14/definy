@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Dictionary - Learn English Words with AI-Generated Definitions",
+  title: "Definy - AI-Powered English Dictionary",
   description:
     "Look up any English word and get clear, learner-friendly definitions, synonyms, and example sentences. Built for A2-B1 English learners.",
 };
